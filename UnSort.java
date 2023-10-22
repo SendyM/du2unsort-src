@@ -24,7 +24,7 @@ class UnSort {
             return list;
         }
         kviks -= 2;
-        //System.out.println("k:" + kviks + " l:" + l + " r:" + r + " " + list);
+        System.out.println("k:" + kviks + " l:" + l + " r:" + r + " ");
         if (kviks < 2) {
             return list;
         }
