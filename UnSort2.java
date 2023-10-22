@@ -23,33 +23,16 @@ class UnSort2 {
             return list;
         }
         kviks -= 2;
-<<<<<<< HEAD
-=======
-        //System.out.println("k:" + kviks + " l:" + l + " r:" + r + " " + list);
->>>>>>> origin/master
         if (kviks < 2) {
             return list;
         }
         int mid = (int) Math.ceil((l + r) / 2.0);
-<<<<<<< HEAD
         if (mid > l && r > mid) {
             // make a copy of the first section before overwriting it
             int[] copy = Arrays.copyOfRange(list, l, mid);
             // overwrite the first section with the second section
             System.arraycopy(list, mid, list, l, r - mid);
             // copy the original content of the first section to the second section
-=======
-        // swap list[0..min) with list[min,r)
-        if (mid > l && r > mid) {
-            System.out.println("Swapping " + l + "," + mid + "," + r);
-            // make a copy of the first section before overwriting it
-            int[] copy = Arrays.copyOfRange(list, l, mid);
-            // overwrite the first section with the second section
-            System.out.println("arraycopy: src=" + mid + ", dst=" + l + ", len=" + (r - mid));
-            System.arraycopy(list, mid, list, l, r - mid);
-            // copy the original content of the first section to the second section
-            System.out.println("arraycopy: src=0, dst=" + (l + r - mid) + ", len=" + copy.length);
->>>>>>> origin/master
             System.arraycopy(copy, 0, list, l + r - mid, copy.length);
         }
 
